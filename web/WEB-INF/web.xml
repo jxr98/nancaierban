@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_4_0.xsd"
+           version="2.5">
+    <servlet>
+        <servlet-name>CustomerRegisterServlet</servlet-name>
+        <servlet-class>servlet.CustomerRegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CustomerRegisterServlet</servlet-name>
+        <url-pattern>/register.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CustomerLoginServlet</servlet-name>
+        <servlet-class>servlet.CustomerLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CustomerLoginServlet</servlet-name>
+        <url-pattern>/login.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ShopsClassificationServlet</servlet-name>
+        <servlet-class>servlet.ShopsClassificationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShopsClassificationServlet</servlet-name>
+        <url-pattern>/shopsClassification</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TestServlet</servlet-name>
+        <servlet-class>servlet.TestServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TestServlet</servlet-name>
+        <url-pattern>/test.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>shopDetailsServlet</servlet-name>
+        <servlet-class>servlet.shopDetailsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>shopDetailsServlet</servlet-name>
+        <url-pattern>/shopDetails</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>addCommentServlet</servlet-name>
+        <servlet-class>servlet.AddCommentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addCommentServlet</servlet-name>
+        <url-pattern>/addComment</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>shopLoginServlet</servlet-name>
+        <servlet-class>servlet.shopLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>shopLoginServlet</servlet-name>
+        <url-pattern>/shopLogin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>shopRegisterServlet</servlet-name>
+        <servlet-class>servlet.shopRegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>shopRegisterServlet</servlet-name>
+        <url-pattern>/shopRegister</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>commentsOnShopServlet</servlet-name>
+        <servlet-class>servlet.commentsOnShopServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>commentsOnShopServlet</servlet-name>
+        <url-pattern>/commentsOnShop</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>myCommentsServlet</servlet-name>
+        <servlet-class>servlet.myCommentsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>myCommentsServlet</servlet-name>
+        <url-pattern>/myComments.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>managerLoginServlet</servlet-name>
+        <servlet-class>servlet.managerLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>managerLoginServlet</servlet-name>
+        <url-pattern>/managerLogin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>manageShopsServlet</servlet-name>
+        <servlet-class>servlet.manageShopsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>manageShopsServlet</servlet-name>
+        <url-pattern>/manageShops</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>shopDetailsRecommendServlet</servlet-name>
+        <servlet-class>servlet.shopDetailsRecommendServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>shopDetailsRecommendServlet</servlet-name>
+        <url-pattern>/shopDetailsRecommend</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>indexRecommendServlet</servlet-name>
+        <servlet-class>servlet.indexRecommendServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>indexRecommendServlet</servlet-name>
+        <url-pattern>/indexRecommend</url-pattern>
+    </servlet-mapping>
+
+    <error-page>
+        <error-code>404</error-code>
+        <location>/404.jsp</location>
+    </error-page>
+
+    <session-config>
+        <session-timeout>35</session-timeout>
+    </session-config>
+</web-app>
